@@ -1,0 +1,32 @@
+
+
+
+Определение функции(возвращаемый тип + название функции + передаваемые в функцию аргументы)
+Public Function Name(a As Single, b As Single) As Single
+
+Name = a+b
+
+End Function
+-----------------------------------------------------------
+Public Function Name(a As Integer, b As Integer) As Integer
+
+If (a > b) Then
+Name = a
+Else
+Name = b
+End If
+
+End Function
+-----------------------------------------------------------
+Public Function Name2(n As Integer) As Integer
+
+Dim i As Integer, s As Integer
+s = 0
+
+For i = 0 To n
+    s = s + i
+Next i
+
+Name2 = s
+
+End Function
