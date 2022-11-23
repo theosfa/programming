@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="To jest strona testowa, będzie się tutaj działo">
+    <title>Hello!</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css
+">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="home">
+        <h1>Curriculum Vitae</h1>
+        <nav>
+            <button id="js-toggle-menu">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <ul id="js-menu">
+                <li><a href="#home" title="Home">Home</a></li>
+                <li><a href="#personal" title="Dane">Dane</a></li>
+                <li><a href="#experience" title="Doświadczenie">Doświadczenie</a></li>
+                <li><a href="#education" title="Edukacja">Edukacja</a></li>
+                <li><a href="#other" title="Inne">Inne</a></li>
+            </ul>
+        </nav>
+        <script>
+            var menuToggleElement = document.getElementById('js-toggle-menu');
+            var menuElement = document.getElementById('js-menu');
+            var mediaQuery = window.matchMedia('(min-width: 768px)');
+
+            mediaQuery.addEventListener('change', function(event) {
+                if (event.matches) {
+                    menuElement.classList.remove('active');
+                }
+            });
+
+            menuToggleElement.addEventListener('click', function() {
+                menuElement.classList.toggle('active');
+            });
+        </script>
+    </header>
+    <div class="main">
+      <div class="intro">
+        <div class="profile_name">
+            <h1>
+                <span class="profile_firstname">Dariia</span>
+                <span class="profile_lastname">Shevchuk</span>
+            </h1>
+            <p class="profile_tagline">We will put something here later</p>
+        </div>
+        <div class="profile_image">
+            <img src="https://picsum.photos/300/400" alt="Zdjęcie kandydata">
+        </div>
+      </div>
+      <div class="info">
+        <div class="basic_info">
+
+        </div>
+        <div class="kontakt">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

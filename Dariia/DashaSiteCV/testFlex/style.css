@@ -1,0 +1,152 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.main{
+  width: 70%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  background: #ccc;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+
+.profile_name{
+  display: flex;
+}
+
+.profile_image{
+  display: flex;
+}
+
+.info{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.sr-only {
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    position: absolute;
+}
+
+#home {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+#home:before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    margin-left: -50vw;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    z-index: -1;
+    background-color: #333;
+}
+
+#home h1 {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+#home nav ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+#home nav a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+#home nav li {
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+
+#home nav li:last-child {
+    border-bottom: none;
+    box-shadow: 0 5px 5px lightgray;
+}
+
+#home nav button {
+    display: block;
+    border: 1px solid lightgray;
+    background-color: black;
+    color: white;
+    width: 48px;
+    height: 48px;
+}
+
+#home nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background-color: #666;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    #home nav button {
+        display: none;
+    }
+
+    #home nav ul {
+        display: flex;
+    }
+
+    #home nav a {
+        border-bottom: 1px solid grey;
+    }
+
+    #home nav a:hover {
+        color: lightgray;
+        border-bottom-color: white;
+    }
+
+    #home nav li {
+        padding: 0.5rem;
+        border-bottom: none;
+    }
+
+    #home nav li:last-child {
+        border-bottom: none;
+        box-shadow: none;
+    }
+}

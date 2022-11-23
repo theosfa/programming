@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="To jest strona testowa, będzie się tutaj działo">
+    <title>Fedor CV</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css
+">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style media="screen">
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.sr-only {
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    position: absolute;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    border: 1px solid lightgray;
+    box-shadow: 0 5px 5px lightgray;
+    margin: 40px auto;
+    padding-top: 50px;
+    background: linear-gradient(to right, #023 35%, #fff 35%);
+}
+
+#personal {
+    background-color: #7de;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+#personal h1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#personal.profile_name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+#personal.profile_image {
+    display: flex;
+    width: 30%;
+}
+
+#personal.profile_image img {
+    width: 100%;
+}
+
+h1 .profile_firstname {
+    font-size: 64px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+h1 .profile_lastname {
+    font-size: 96px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-bottom: 16px;
+    margin: 0;
+    border-bottom: 3px solid #fff;
+}
+
+.profile_tagline {
+    font-family: 'Oswald', 'serif';
+    font-size: 32px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 40px auto;
+  padding-top: 50px;
+}
+
+.basic_info {
+    display: flex;
+    box-sizing: border-box;
+    width: 30%;
+    max-width: 450px;
+    min-width: 200px;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.basic_info a {
+    color: #fff;
+}
+
+.basic_info h1 {
+    color: #7de;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    margin-right: -20px;
+}
+
+.additional_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 70%;
+    max-width: 800px;
+    min-width: 550px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', 'serif';
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+}
+
+#home {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+#home:before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    margin-left: -50vw;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    z-index: -1;
+    background-color: #333;
+}
+
+#home h1 {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+#home nav ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+#home nav a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+#home nav li {
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+
+#home nav li:last-child {
+    border-bottom: none;
+    box-shadow: 0 5px 5px lightgray;
+}
+
+#home nav button {
+    display: block;
+    border: 1px solid lightgray;
+    background-color: black;
+    color: white;
+    width: 48px;
+    height: 48px;
+}
+
+#home nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background-color: #666;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 800px) {
+    #home nav button {
+        display: none;
+    }
+
+    #home nav ul {
+        display: flex;
+    }
+
+    #home nav a {
+        border-bottom: 1px solid grey;
+    }
+
+    #home nav a:hover {
+        color: lightgray;
+        border-bottom-color: white;
+    }
+
+    #home nav li {
+        padding: 0.5rem;
+        border-bottom: none;
+    }
+
+    #home nav li:last-child {
+        border-bottom: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 900px) {
+    main{
+      background: #fff;
+    }
+    #info {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .basic_info {
+        display: flex;
+        box-sizing: border-box;
+        max-width: 100%;
+        min-width: 150px;
+        width: 100%;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .basic_info a {
+        color: #fff;
+    }
+}
+
+.additional_info h1 {
+    font-family: 'Oswald', 'serif';
+    color: #023;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.additional_info .places_list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.additional_info .places_list li {
+    display: flex;
+    flex-direction: row;
+}
+
+.places_list .place_dates {
+    box-sizing: border-box;
+    width: 8em;
+    border-right: 2px solid #7de;
+    position: relative;
+}
+
+.place_dates ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.place_dates li {
+    text-align: center;
+}
+
+.place_details {
+    padding-left: 2rem;
+}
+
+.place_details h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+
+.place_details .place_title {
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
+.place_dates:after {
+    content: '\25CB';
+    color: #7de;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    right: -0.45rem;
+    background-color: white;
+    line-height: 0.7em;
+}
+
+</style>
+<header id="home">
+    <h1>Curriculum Vitae</h1>
+    <nav>
+        <button id="js-toggle-menu">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <ul id="js-menu">
+            <li><a href="#home" title="Home">Home</a></li>
+            <li><a href="#personal" title="Dane">Dane</a></li>
+            <li><a href="#experience" title="Doświadczenie">Doświadczenie</a></li>
+            <li><a href="#education" title="Edukacja">Edukacja</a></li>
+            <li><a href="#other" title="Inne">Inne</a></li>
+        </ul>
+    </nav>
+    <script>
+        var menuToggleElement = document.getElementById('js-toggle-menu');
+        var menuElement = document.getElementById('js-menu');
+        var mediaQuery = window.matchMedia('(min-width: 768px)');
+
+        mediaQuery.addEventListener('change', function(event) {
+            if (event.matches) {
+                menuElement.classList.remove('active');
+            }
+        });
+
+        menuToggleElement.addEventListener('click', function() {
+            menuElement.classList.toggle('active');
+        });
+    </script>
+</header>
+
+<main>
+    <header id="personal">
+        <div class="profile_name">
+            <h1>
+                <span class="profile_firstname">Fedor</span>
+                <span class="profile_lastname">Alekseyev</span>
+            </h1>
+            <p class="profile_tagline">My short curriculum vitae</p>
+        </div>
+        <div class="profile_image">
+            <img src="https://picsum.photos/300/400" alt="Zdjęcie kandydata">
+        </div>
+    </header>
+    <div id="info">
+      <div class="basic_info">
+          <section id="contact">
+              <header><h1>Kontakt</h1></header>
+              <a href="#home" class="sr-only" title="Powrót do góry strony">&uarr;</a>
+              <ul class="bold">
+                  <li>
+                      <span>tel.:</span>
+                      <a href="tel:00380667670427" title="Zadzwoń">+38 066 767 0427</a>
+                       </li>
+                      <li> <span>tel.:</span>
+                       <a href="tel:00515572489" title="Zadzwoń">+48 518 109 804</a>
+                  </li>
+                  <li>
+                      <span>e-mail:</span>
+                      <a href="mailto:theos.fa.work@gmail.com?subject=Hello!" title="Wyślij e-mail">
+                          theos.fa.work@gmail.com
+                      </a>
+                  </li>
+              </ul>
+          </section>
+      </div>
+
+      <div class="additional_info">
+          <section id="experience">
+              <header>
+                  <h1>Doświadczenie zawodowe</h1>
+                  <a href="#home" class="sr-only" title="Powrót do góry strony">&uarr;</a>
+                  <!-- TODO: flexbox dla header -->
+              </header>
+                  <ol class="places_list">
+                  <li>
+                      <div class="place_dates">
+                          <ul>
+                              <li>od 2019</li>
+                              <li>do 2020</li>
+                          </ul>
+                      </div>
+                      <div class="place_details">
+                          <h2 class="place_name">IsSoft</h2>
+                          <p class="place_title">Intern</p>
+                          <p class="place_description">
+
+                          </p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="place_dates">
+                          <ul>
+                              <li>od 2018</li>
+                              <li>do 2019</li>
+                          </ul>
+                      </div>
+                      <div class="place_details">
+                          <h2 class="place_name">Creator sites</h2>
+                          <p class="place_title">Backend deceloper</p>
+                          <p class="place_description">
+                               Robiłem swóją stroną internetową
+                          </p>
+                      </div>
+                  </li>
+
+              </ol>
+
+          </section>
+
+          <section id="education">
+              <header>
+                  <h1>Edukacja</h1>
+                  <a href="#home" class="sr-only" title="Powrót do góry strony">&uarr;</a>
+              </header>
+                   <ol class="places_list">
+                  <li>
+                      <div class="place_dates">
+                          <ul>
+                              <li>od 2007</li>
+                              <li>do 2018</li>
+                          </ul>
+                      </div>
+                      <div class="place_details">
+                          <h2 class="place_name">Szkoła Mińska, Minsk, Białoruś</h2>
+                          <p class="place_title">uczennik</p>
+                          <p class="place_description">
+
+                          </p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="place_dates">
+                          <ul>
+                              <li>od 2021</li>
+                              <li>do 2024</li>
+                          </ul>
+                      </div>
+                      <div class="place_details">
+                          <h2 class="place_name">Academia Pomorska w Słupsku</h2>
+                          <p class="place_title">student</p>
+                          <p class="place_description">
+                              <!-- TODO: czym się zajmowałem? -->
+                          </p>
+                      </div>
+                  </li>
+
+              </ol>
+               <!-- TODO -->
+          </section>
+
+          <section id="other">
+              <header>
+                  <h1>Umiejętności</h1>
+                  <a href="#home" class="sr-only" title="Powrót do góry strony">&uarr;</a>
+                  <ol class="places_list">
+                  <li>
+                    <div class="place_dates">
+                        <ul>
+                            <li>Medium</li>
+                        </ul>
+                    </div>
+                    <div class="place_details">
+                        <h2 class="place_name">Java Core</h2>
+                        <p class="place_description">
+
+                        </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="place_dates">
+                        <ul>
+                            <li>Medium</li>
+                        </ul>
+                    </div>
+                    <div class="place_details">
+                        <h2 class="place_name">Python 3</h2>
+                        <p class="place_description">
+
+                        </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="place_dates">
+                        <ul>
+                            <li>Basic</li>
+                        </ul>
+                    </div>
+                    <div class="place_details">
+                        <h2 class="place_name">C++</h2>
+                        <p class="place_description">
+
+                        </p>
+                    </div>
+                  </li>
+              </ol>
+
+          </section>
+          <section>
+              <header>
+                  <h1>Języki</h1>
+                  <a href="#home" class="sr-only" title="Powrót do góry strony">&uarr;</a>
+              </header>
+              <!-- Język rosyjski - zaawansowany
+              Język angielski - średniozaawansowany
+              Język francuski -  średniozaawansowany
+              Język polski – początkujący -->
+
+              <ol class="places_list">
+              <li>
+                <div class="place_dates">
+                    <ul>
+                        <li>zaawansowany</li>
+                    </ul>
+                </div>
+                <div class="place_details">
+                    <h2 class="place_name">Język rosyjski</h2>
+                    <p class="place_description">
+
+                    </p>
+                </div>
+              </li>
+              <li>
+                <div class="place_dates">
+                    <ul>
+                        <li>średnio</li>
+                    </ul>
+                </div>
+                <div class="place_details">
+                    <h2 class="place_name">Język angielski</h2>
+                    <p class="place_description">
+
+                    </p>
+                </div>
+              </li>
+              <li>
+                <div class="place_dates">
+                    <ul>
+                        <li>średnio</li>
+                    </ul>
+                </div>
+                <div class="place_details">
+                    <h2 class="place_name">Język francuski</h2>
+                    <p class="place_description">
+
+                    </p>
+                </div>
+              </li>
+              <li>
+                <div class="place_dates">
+                    <ul>
+                        <li>początkujący</li>
+                    </ul>
+                </div>
+                <div class="place_details">
+                    <h2 class="place_name">Język polski</h2>
+                    <p class="place_description">
+
+                    </p>
+                </div>
+              </li>
+          </ol>
+          </section>
+      </div>
+    </div>
+</main>
+
+<footer>
+    // TODO: klauzula o przetwarzaniu danych
+    &copy; Copyright 2022 by Jakub Bilski
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+/Users/theosalex/Documents/Daria/Csharp/bin/Debug/net6.0/Csharp
+/Users/theosalex/Documents/Daria/Csharp/bin/Debug/net6.0/Csharp.deps.json
+/Users/theosalex/Documents/Daria/Csharp/bin/Debug/net6.0/Csharp.runtimeconfig.json
+/Users/theosalex/Documents/Daria/Csharp/bin/Debug/net6.0/Csharp.dll
+/Users/theosalex/Documents/Daria/Csharp/bin/Debug/net6.0/Csharp.pdb
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/Csharp.csproj.AssemblyReference.cache
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/Csharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/Csharp.AssemblyInfoInputs.cache
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/Csharp.AssemblyInfo.cs
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/Csharp.csproj.CoreCompileInputs.cache
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/Csharp.dll
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/refint/Csharp.dll
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/Csharp.pdb
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/Csharp.genruntimeconfig.cache
+/Users/theosalex/Documents/Daria/Csharp/obj/Debug/net6.0/ref/Csharp.dll
