@@ -1,0 +1,10 @@
+using System;
+
+namespace FirstProgram {
+    class A232 {
+        public A232(){}
+
+        public int Solver(){
+        }
+    }
+}

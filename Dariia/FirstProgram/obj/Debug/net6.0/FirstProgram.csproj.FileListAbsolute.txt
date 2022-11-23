@@ -1,0 +1,15 @@
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/bin/Debug/net6.0/FirstProgram
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/bin/Debug/net6.0/FirstProgram.deps.json
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/bin/Debug/net6.0/FirstProgram.runtimeconfig.json
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/bin/Debug/net6.0/FirstProgram.dll
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/bin/Debug/net6.0/FirstProgram.pdb
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/FirstProgram.csproj.AssemblyReference.cache
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/FirstProgram.GeneratedMSBuildEditorConfig.editorconfig
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/FirstProgram.AssemblyInfoInputs.cache
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/FirstProgram.AssemblyInfo.cs
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/FirstProgram.csproj.CoreCompileInputs.cache
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/FirstProgram.dll
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/refint/FirstProgram.dll
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/FirstProgram.pdb
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/FirstProgram.genruntimeconfig.cache
+/Users/theosalex/Documents/Programming/Daria/DariaLearningProgramming/FirstProgram/obj/Debug/net6.0/ref/FirstProgram.dll
